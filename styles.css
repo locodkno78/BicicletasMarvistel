@@ -33,10 +33,9 @@ h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.logo img{
-   padding-bottom:10px ;
-   margin-top: 10px;
-  
+.nav img{
+    padding-bottom:10px ;
+    margin-top: 10px;
 }
  .nav-link{
     color:white;
