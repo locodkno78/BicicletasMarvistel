@@ -1,103 +1,129 @@
-body {
-    font-family:Arial, Helvetica, sans-serif;
-   margin:0;
-   padding: 0;
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;    
+    overflow-x: hidden;/* Evita el scroll horizontal */
 }
+
 h1 {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     padding: 15px;
     font-size: 40px;
 }
+
 /*ICONO DE WHATSAPP*/
 .whatsapp-button {
-    position: fixed;/* se mantiene fijo en la pantalla, incluso cuando se desplaza*/
-    bottom: 20px; /* Distancia desde el borde inferior de la ventana de visualización */
-    right: 20px;/* Distancia desde el borde derecho de la ventana de visualización */
-    z-index: 100; /*Asegura que el botón esté por encima de otros elementos de la página.*/
-  
+    position: fixed;
+    /* se mantiene fijo en la pantalla, incluso cuando se desplaza*/
+    bottom: 20px;
+    /* Distancia desde el borde inferior de la ventana de visualización */
+    right: 20px;
+    /* Distancia desde el borde derecho de la ventana de visualización */
+    z-index: 100;
+    /*Asegura que el botón esté por encima de otros elementos de la página.*/
+
 }
+
 .whatsapp-button img {
     width: 50px;
     height: 50px;
 }
 
 .whatsapp-button:hover img {
-    opacity: 0.7; /* Cambia la opacidad de la imagen al hacer hover */
+    opacity: 0.7;
+    /* Cambia la opacidad de la imagen al hacer hover */
 }
 
 /*NAVEGACIÓN*/
 
 .navbar {
-    background-color:rgb(150, 150, 233);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(150, 150, 233);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.nav img{
-    padding-bottom:10px ;
+.nav img {
+    padding-bottom: 10px;
     margin-top: 10px;
 }
- .nav-link{
-    color:white;
+
+.nav-link {
+    color: white;
     font-size: 16px;
     font-weight: bold;
 }
+
 .nav-link:hover {
-    color:rgb(65, 41, 153)  !important;
+    color: rgb(65, 41, 153) !important;
 }
-.nav-link.active{
+
+.nav-link.active {
     color: rgb(65, 41, 153);
 }
+
 /*MENÚ DESPLEGABLE*/
-.dropdown-menu{
-    background-color:rgb(150, 150, 233);
-    
+.dropdown-menu {
+    background-color: rgb(150, 150, 233);
+
 }
+
 .dropdown-item {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:rgb(150, 150, 233);
-    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(150, 150, 233);
+    color: white;
     font-size: 16px;
     font-weight: bold;
 }
-.dropdown-item:hover{
-    color:rgb(65, 41, 153);
+
+.dropdown-item:hover {
+    color: rgb(65, 41, 153);
     background-color: rgb(150, 150, 233);
 }
+
 /*ENLACES*/
 a {
     color: black;
-    text-decoration: none; /*saca el subrayado y cambia el color de la letra a negro*/
+    text-decoration: none;
+    /*saca el subrayado y cambia el color de la letra a negro*/
 }
+
 .enlace {
     color: blue;
 }
+
 .enlace:hover {
-    color:rgb(65, 41, 153) ;
+    color: rgb(65, 41, 153);
 }
+
 /*BUSCADOR*/
-.form-control { 
+.form-control {
     margin-bottom: 10px;
 }
 
 
 /*BOTONES*/
-.btn{
- color: white;
- background-color: black;
- font-size: 20px;
+.btn {
+    color: white;
+    background-color: black;
+    font-size: 20px;
 
- 
+
 }
+
 .btn:hover {
     background-color: rgb(65, 41, 153) !important;
 }
+
 /*IMAGENES DEL CARRUSEL*/
 .d-block {
-    width:100%;
-    height: auto;/* Permite que la altura se ajuste automáticamente */
-    max-height: 600px; /* Ajusta la altura máxima según sea necesario */
-    object-fit: cover; /* Recorta las imágenes para que se ajusten  sin distorsionarse */
+    width: 100%;
+    height: auto;
+    /* Permite que la altura se ajuste automáticamente */
+    max-height: 600px;
+    /* Ajusta la altura máxima según sea necesario */
+    object-fit: cover;
+    /* Recorta las imágenes para que se ajusten  sin distorsionarse */
 }
 
 .presentacion p {
@@ -106,23 +132,28 @@ a {
     margin: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-   
+
 }
+
 .presentacion a {
     text-decoration: none;
     padding-left: 10px;
 }
+
 .informacion {
-    background-color:#E0E0E0;
+    background-color: #E0E0E0;
     padding: 15px;
     border: 10px white solid;
-    max-width: 97%; /* Limita el ancho máximo */
-    margin: 0 auto; /* Centra la sección en la página */
+    max-width: 97%;
+    /* Limita el ancho máximo */
+    margin: 0 auto;
+    /* Centra la sección en la página */
 }
 
-.informacion article{
+.informacion article {
     text-align: center;
-    transition: transform 0.3s ease; /* Para una transición suave en hover */
+    transition: transform 0.3s ease;
+    /* Para una transición suave en hover */
     padding: 5px;
     margin: 5px;
 }
@@ -131,25 +162,29 @@ a {
     text-align: center;
     font-size: 15px;
     font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .informacion article:hover {
-    transform: translateY(-10px); /* Ajusta la distancia del desplazamiento vertical */
-  }
+    transform: translateY(-10px);
+    /* Ajusta la distancia del desplazamiento vertical */
+}
 
 /*BICICLETAS MARVISTEL*/
 .card {
     border: 1px black solid;
     margin: 15px;
     margin-bottom: 30px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Añade una pequeña transición para un efecto al pasar el ratón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* Añade una pequeña transición para un efecto al pasar el ratón */
 }
 
 .card:hover {
-    
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Agrega una sombra más fuerte */
-    border-color: blue; /* Cambia el color del borde */
+
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Agrega una sombra más fuerte */
+    border-color: blue;
+    /* Cambia el color del borde */
 }
 
 .card-body {
@@ -161,7 +196,7 @@ a {
     font-size: 18px;
     margin: 0;
     /* Elimina el margen para asegurar que el texto esté alineado correctamente */
-    
+
 }
 
 .card a {
@@ -171,74 +206,89 @@ a {
 .marcas {
     width: 97%;
 }
+
 /* Efecto de Zoom al Hover para la marca */
-.logo-marca{
-    display: inline-block; /* Asegura que el elemento sea tratado como un bloque en línea */
-    transition: transform 0.3s ease-in-out; /* Suaviza la transición del zoom */
+.logo-marca {
+    display: inline-block;
+    /* Asegura que el elemento sea tratado como un bloque en línea */
+    transition: transform 0.3s ease-in-out;
+    /* Suaviza la transición del zoom */
 }
 
 .logo-marca:hover {
-    transform: scale(1.1); /* Aumenta el tamaño al 110% cuando el usuario pasa el cursor */
+    transform: scale(1.1);
+    /* Aumenta el tamaño al 110% cuando el usuario pasa el cursor */
 }
+
 /*NOSOTROS*/
 .nosotros {
     width: 90%;
     margin: 5%;
 }
+
 /*IMAGEN DEL LOCAL*/
 .local {
     border-radius: 10%;
     float: left;
-    padding:15px;
+    padding: 15px;
     width: 700px;
-   
+
 }
+
 section p {
-   margin:20px;
-   font-size: 17px;
-   font-family:Arial, Helvetica, sans-serif;
-    
+    margin: 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
+
 /*UBICACIÒN*/
 section iframe {
     width: 100%;
-    
+
 }
 
 
 /*FORMULARIO INICIO DE SESIÒN*/
 
 .formulario-login form {
-    max-width: 550px; 
-    width:100%; 
-    background-color:rgb(185, 185, 235) ; 
+    max-width: 550px;
+    width: 100%;
+    background-color: rgb(185, 185, 235);
 }
+
 .formulario-login label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
- }
- .formulario-login input {
+}
+
+.formulario-login input {
     width: 100%;
 }
+
 .datos {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
 }
+
 .formulario-login a {
     font-weight: bold;
     color: black;
     text-decoration: underline;
-    padding-left: 5px; 
+    padding-left: 5px;
 
 }
+
 .formulario-login a:hover {
-    color:rgb(65, 41, 153);
+    color: rgb(65, 41, 153);
 }
-.iniciar-sesion{
+
+.iniciar-sesion {
     width: 100%;
-   
+
 }
+
 /*FORMULARIO CREAR CUENTA*/
 
 .compra {
@@ -246,109 +296,125 @@ section iframe {
 }
 
 .formulario-crear-cuenta form {
-    max-width: 550px; 
-    width:100%; 
-    background-color:rgb(185, 185, 235) ; 
+    max-width: 550px;
+    width: 100%;
+    background-color: rgb(185, 185, 235);
 }
+
 .formulario-crear-cuenta label {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
- }
- .formulario-crear-cuenta input {
+}
+
+.formulario-crear-cuenta input {
     width: 100%;
 }
+
 .crear-cuenta {
     width: 100%;
 }
+
 /*CREAR CUENTA TEXTO*/
 .compra {
     text-align: center;
-    
+
 }
 
 .formulario-crear-cuenta a {
     font-weight: bold;
     color: black;
     text-decoration: underline;
-    padding-left: 5px; 
+    padding-left: 5px;
 }
+
 .formulario-crear-cuenta a:hover {
-    color:rgb(65, 41, 153);
+    color: rgb(65, 41, 153);
 }
 
 
 /*FORMULARIO DE CONTACTO*/
 
 .formulario-contacto form {
-    max-width: 550px; 
-    width:100%; 
-    background-color:rgb(185, 185, 235) ; 
+    max-width: 550px;
+    width: 100%;
+    background-color: rgb(185, 185, 235);
 }
+
 .formulario-contacto label {
- font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
 
 }
 
 .formulario-contacto input {
     width: 100%;
 }
-.contacto p{
+
+.contacto p {
     text-align: center;
     margin: 5px;
 }
-.horarios{
+
+.horarios {
     text-align: center;
     padding-top: 10px;
 }
+
 .formulario-contacto {
     margin-top: 10px;
- 
+
 }
+
 .formulario-contacto textarea {
     max-width: 100%;
-    max-height: 300px; 
-   
-  }
+    max-height: 300px;
+
+}
 
 
 /*PIE DE PÁGINA*/
 footer {
     background-color: rgb(150, 150, 233);
-    color: #fff; /* Color blanco para el texto */
+    color: #fff;
+    /* Color blanco para el texto */
     padding-top: 1%;
     padding-bottom: 1%;
     padding-left: 3%;
     padding-right: 3%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 footer h3 {
     font-size: 15px;
-   font-weight: bold;
-   padding-top: 15px;
-   padding-bottom: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
 .correo {
     margin-left: 10px;
 }
+
 .contactanos {
     margin-left: 10px;
 }
-.piedepagina{
+
+.piedepagina {
     font-size: 13px;
     font-weight: bold;
     color: white;
 }
-.piedepagina:hover{
-    color:rgb(65, 41, 153);
+
+.piedepagina:hover {
+    color: rgb(65, 41, 153);
 }
-footer  img {
-   padding-top:20px ;
+
+footer img {
+    padding-top: 20px;
     width: 25px;
     margin-right: 10px;
-    
+
 
 }
 
@@ -357,9 +423,8 @@ footer p {
     text-align: center;
     margin-top: 50px !important;
     font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    
-} 
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
 
 
@@ -369,15 +434,15 @@ footer p {
 
     /*Aca ven todos los cambios de anchos y margenes*/
     /*Conviene usar porcentajes*/
-    
-    
-    
+
+
+
 
     .local {
         width: 75%;
         margin-left: 2.5%;
     }
-    
+
 }
 
 /*CELULARES*/
@@ -385,20 +450,17 @@ footer p {
     /*Aca ven todos los cambios de anchos y margenes*/
     /*Conviene usar porcentajes*/
 
-    
+
     .local {
         width: 95%;
         margin-left: 2.5%;
     }
 
     .formulario-contacto {
-        margin-top: 0; /* Eliminar el margen superior */
-      }
-   
-      
-   
+        margin-top: 0;
+        /* Eliminar el margen superior */
+    }
+
+
+
 }
-
-
-
-
