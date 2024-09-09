@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Bicicletas Marvistel - Venta de Bicicletas en Buenos Aires</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/main.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <!--MENÚ DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!--LOGO-->
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.jpg" alt="logo Marvistel" width="146" height="140">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--MENÚ DE ENLACES-->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="index.html" style="color: white;">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false" style="color: white;">Bicicletas</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#productos" onclick="productos('venzo')">Venzo</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('spy')">Spy</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('raleigh')">Raleigh</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('moove')">Moove</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('ninos')">Niños</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('marvistel')">Marvistel</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('plegables')">Plagables</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('totem')">Tótem</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('skinred')">Skinred</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('raider')">Raider</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('lamborghini')">Lamborghini</a></li>
+                <li><a class="dropdown-item" href="#productos" onclick="productos('shift ')">Shift </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          
+          <!--BARRA DE BÚSQUEDA-->
+            <form class="d-flex ms-auto" role="search">
+              <input class="form-control me-2 " type="search" placeholder="¿Qué estás buscando?" aria-label="Search" >
+              <button class="btn btn-outline-primary " type="submit" style="font-size: 15px;height: 40px; ">BUSCAR</button>
+            </form>
+        <!--REGISTRO DE USUARIOS-->
+        <!--
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                style="color:white">Mi cuenta
+                <img src="img/usuario.png" alt="icono de usuario" width="30" height="36"> </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="iniciar-sesion.html">Iniciar Sesión</a></li>
+                <li><a class="dropdown-item" href="crear-cuenta.html">Crear cuenta</a></li>
+              </ul>
+            </li>
+            -->
+            <!--CARRITO DE COMPRAS-->
+            <!--<div class="carrito">
+            <a href="#"> <img src="img/carro-de-la-compra.png" alt="carrito de compras"></a>
+        </div>-->
+
+      </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--CARRUSEL DE FOTOS -->
+  <section>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img src="img/Raleigh MXR R20.jpg" class="d-block w-100 " alt="Raleigh MXM R20">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="img/Venzo Firda Belle R29.jpg" class="d-block w-100 " alt="Venzo Firda Belle R29">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img src="img/Raleigh Mojave 4.0 R29.jpg" class="d-block w-100 " alt="Raleigh Mojave 4.0 R29">
+        </div>
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next " type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!--ICONO DE WHATSAPP-->
+<a href="https:/wa.me/5491138540419" class="whatsapp-button" target="_blank">
+  <img src="img/whatsapp.png" alt="WhatsApp">
+</a>
+
+
+  <section class="presentacion">
+    <div>
+      <p>Llevamos más de 30 años ofreciendo bicicletas de calidad para todas las edades</p>
+      <p>¿Quieres conocer más sobre nosotros?<a href="nosotros.html" class="enlace">Haz click aquí</a></p>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE INFORMACIÓN -->
+<section class="informacion d-flex flex-wrap justify-content-center align-items-center shadow-lg p-3 mb-5 bg row">
+  <article class="col-3 d-flex flex-column align-items-center mb-3">
+    <img src="img/camion-de-carga.png" alt="camión de Envios" class="img-fluid mb-2" width="40" height="34">
+    <p class="text-center">Envios a todo el país</p>
+  </article>
+  <article class="col-3 d-flex flex-column align-items-center mb-3">
+    <img src="img/candado.png" alt="Compra Segura" class="img-fluid mb-2" width="40" height="34">
+    <p class="text-center">Compra segura</p>
+  </article>
+  <article class="col-3 d-flex flex-column align-items-center mb-3">
+    <img src="img/datos protegidos.png" alt="Datos protegidos" class="img-fluid mb-2" width="40" height="34">
+    <p class="text-center">Tus datos están protegidos</p>
+  </article>
+  <article class="col-3 d-flex flex-column align-items-center mb-3">
+    <img src="img/garantia.png" alt="Garantía" class="img-fluid mb-2" width="40" height="34">
+    <p class="text-center">Garantía de 6 meses</p>
+  </article>
+  <article class="col-3 d-flex flex-column align-items-center mb-3">
+    <img src="img/medios de pago.png" alt="Medios de pago" class="img-fluid mb-2" width="40" height="34">
+    <p class="text-center">Todos los medios de pago</p>
+  </article>
+  <article class="col-3 d-flex flex-column align-items-center mb-3">
+    <img src="img/whatsapp-icono.png" alt="WhatsApp" class="img-fluid mb-2" width="40" height="34">
+    <p class="text-center">Consultas por WhatsApp</p>
+  </article>
+</section>
+
+<section id="productos">
+  <!-- Acá van los productos por categorias-->
+
+</section>
+
+  <!--ALGUNAS BICICLETAS-->
+  <section class="row ">
+    <h1>Descubre nuestras bicicletas Marvistel</h1>
+    <article class="col-sm-12 col-md-6 col-lg-3 border-primary mb-3">
+      <div class="card">
+        <img src="img/Paseo Full Marvistel R24.png" class="card-img-top img-fluid " alt="Paseo Full Marvistel R24" onclick="productos('marvistel')">
+        <div class="card-body ">
+          <div class="text-center">
+          <p class="card-text ">Paseo Full Marvistel R24</p>
+          <strong>
+           <p  class="card-text text-center " >$196.000</p>
+          </strong>
+        </div>
+        <div  class="d-flex justify-content-center ">
+              <a href="https://wa.me/5491138540419"class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>
+        </div>
+        </div>
+      </div> 
+    </article>
+
+    <article class="col-sm-12 col-md-6 col-lg-3 border-primary mb-3">
+      <div class="card">
+        <img src="img/Paseo Vintage Marvistel R26.png" class="card-img-top img-fluid" alt="Paseo Vintage Marvistel R26" onclick="productos('marvistel')">
+        <div class="card-body">
+          <div class="text-center">
+              <p class="card-text ">Paseo Vintage Marvistel R26</p>
+            <strong>
+            <p class="card-text text-center ">$234.000</p>
+          </strong>
+          </div>
+          <div class="d-flex justify-content-center ">
+            <a href="https://wa.me/5491138540419" class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    
+    <article class="col-sm-12 col-md-6 col-lg-3 border-primary mb-3">
+      <div class="card ">
+        <img src="img/Mountain Bike Marvistel R26.png" class="card-img-top img-fluid " alt="Mountain Bike Marvistel R26" onclick="productos('marvistel')">
+        <div class="card-body ">
+          <div class="text-center">
+              <p class="card-text ">Mountain Bike Marvistel R26</p>
+            <strong>
+            <p class="card-text text-center">$182.400</p>
+          </strong>
+          </div>
+          <div class="d-flex justify-content-center ">
+            <a href="https://wa.me/5491138540419" class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="col-sm-12 col-md-6 col-lg-3 border-primary mb-3">
+      <div class="card">
+        <img src="img/Playera contrapedal Marvistel R29.png" class="card-img-top img-fluid" alt="Playera contrapedal Marvistel R29" onclick="productos('marvistel')">
+        <div class="card-body ">
+          <div class="text-center">
+              <p class="card-text ">Playera contapedal Marvistel R29 </p>
+            <strong>
+            <p class="card-text text-center ">$205.000</p>
+          </strong>
+          </div>
+          <div class="d-flex justify-content-center ">
+            <a href="https://wa.me/5491138540419" class="btn btn-primary" target="_blank" style="font-size: 15px;height: 35px;">COMPRAR</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+
+
+  <!--MARCAS -->
+  <section class="row d-flex justify-content-center">
+    <h1 class="btn btn-secondary marcas" >CONSEGUÍ LAS MEJORES MARCAS</h1>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/logo-venzo.jpg" alt="logo Venzo"  class="logo-marca"width="180" height="130" onclick="productos('venzo')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/logo-TOTEM.png" alt="Logo Totem" class="logo-marca" width="180" height="130"   onclick="productos('totem')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/shift-logo.png" alt="Logo Shift" class="logo-marca" width="130" height="120" onclick="productos('shift ')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/logo-skinred.png" alt="Logo logo-skinred"class="logo-marca"  width="190" height="130" onclick="productos('skinred')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/Raleigh-logo.png" alt="Logo Raleigh" class="logo-marca" width="180" height="130" onclick="productos('raleigh')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/Lamborghini-logo.webp" alt="Logo Lamborghini" class="logo-marca"width="190" height="130" onclick="productos('lamborghini')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/logo-spy.png" alt="Logo Spy" class="logo-marca" width="300" height="130" onclick="productos('spy')">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/LOGO-SHIMANO.png" alt="Logo Shimano" class="logo-marca" width="250" height="130">
+    </article>
+    <article class="col-6 col-sm-4 col-md-3 col-lg-2 border-primary mb-3">
+      <img src="img/moove-logo.png" alt="Logo Moove" class="logo-marca" width="190" height="130" onclick="productos('moove')">
+    </article>
+    </main>
+
+    <!--PIE DE PÁGINA-->
+<footer class="container-fluid py-4" >
+  <div class="row text-center text-lg-start">
+    <!--CONTACTO-->
+    <article class="col-12 col-lg-4 mb-3">
+      <h3 class="contactanos">CONTÁCTANOS</h3>
+      <a href="mailto:bicicletasmarvistel@gmail.com" target="_blank" class="d-flex align-items-center justify-content-center justify-content-lg-start" title="Enviar email">
+        <img src="img/gmail.png" alt="email" class="me-2 correo">
+        <h4 class="piedepagina mb-0">bicicletasmarvistel@gmail.com</h4>
+      </a>
+    </article>
+
+    <!--UBICACIÓN-->
+    <article class="col-12 col-lg-4 mb-3">
+      <h3>UBICACIÓN</h3>
+      <a href="https://maps.app.goo.gl/kRTVuitrRvSmdQa26" target="_blank" class="d-flex align-items-center justify-content-center justify-content-lg-start" title="Ver ubicación">
+        <img src="img/ubicacion.png" alt="ubicacion" class="me-2">
+        <h4 class="piedepagina mb-0">Molina Arrotea 998 - Lomas de Zamora-Buenos Aires</h4>
+      </a>
+    </article>
+
+    <!--REDES SOCIALES-->
+    <article class="col-12 col-lg-4 mb-3">
+      <h3>NUESTRAS REDES SOCIALES</h3>
+      <div class="d-flex justify-content-center justify-content-lg-start">
+        <a href="https://www.instagram.com/bicicletas_marvistel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" title="Ir a Instagram" class="me-3">
+          <img src="img/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.facebook.com/tubicimarvistel?mibextid=ZbWKwL" target="_blank" title="Ir a Facebook">
+          <img src="img/facebook.png" alt="facebook">
+        </a>
+      </div>
+    </article>
+  </div>
+
+  <p class="text-center mt-4">© Marvistel 2024. Todos los derechos reservados</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
